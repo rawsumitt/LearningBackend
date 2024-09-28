@@ -4,11 +4,11 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello and welcome here! try `/sumit` to jump on different page')
 })
 
 app.get('/sumit', (req, res)=>{
-    res.send('<h1>hello this is my page<h1/>')
+    res.send('<h1>Good job<h1/>')
 })
 
 app.listen(process.env.PORT, () => {
